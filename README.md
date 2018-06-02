@@ -8,7 +8,6 @@ How to set up the application
 $ git clone https://github.com/diaryofdiscoveries/clean-css.git
 $ cd clean-css
 $ npm install
-$ node index.js
 ```
 - Please add a links.csv file to the project, specifying the webpages to crawl.
 
