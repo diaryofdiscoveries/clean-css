@@ -1,0 +1,25 @@
+{
+  "name": "clean-css",
+  "version": "1.0.0",
+  "description": "Crawls pages and outputs list of unused CSS selectors",
+  "main": "index.js",
+  "devDependencies": {
+    "chalk": "2.4.1",
+    "css": "2.2.3",
+    "puppeteer": "1.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diaryofdiscoveries/clean-css.git"
+  },
+  "keywords": [
+    "Unused",
+    "CSS"
+  ],
+  "author": "Zoe Hopkins, Hubert Manilla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diaryofdiscoveries/clean-css/issues"
+  },
+  "homepage": "https://github.com/diaryofdiscoveries/clean-css#readme"
+}
