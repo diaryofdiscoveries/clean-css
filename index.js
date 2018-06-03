@@ -6,18 +6,6 @@ const fs = require("fs");
 let browser = null;
 let links = null;
 
-/*const links = ['https://www.comparethemarket.com',
-               'https://www.comparethemarket.com/car-insurance/',
-               'https://www.comparethemarket.com/home-insurance/',
-               'https://www.comparethemarket.com/life-insurance/',
-               'https://www.comparethemarket.com/pet-insurance/',
-               'https://www.comparethemarket.com/travel-insurance/',
-               'https://www.comparethemarket.com/broadband/',
-               'https://www.comparethemarket.com/energy/',
-               'https://www.comparethemarket.com/credit-cards/',
-               'https://www.comparethemarket.com/business-insurance/',
-               'https://www.comparethemarket.com/van-insurance/'];*/
-
 const stylesheet = 'https://cdn.comparethemarket.com/market/assets/responsive2015/sass/styles__243997a82c6317c8e36f126f9fb1e638.css';
 const filepath = './unused-selectors.txt';
 const linksfile = './links.csv';
@@ -48,8 +36,7 @@ function writeToFile(content) {
   });
 }
 
-// Should return a list of selectors which are not
-// used on this page
+// Should return a list of selectors which are not used on this page
 async function findUnusedSelectors(page, selectors) {
   const unused = [];
   for (let selector of selectors) {
@@ -77,6 +64,7 @@ async function loadPage(url, browser) {
 
 async function init() {
   browser = await puppeteer.launch();
+  
   // css
   const cssPage = await loadPage( stylesheet, browser);
   const cssContent = await cssPage.content();
